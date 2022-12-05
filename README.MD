@@ -1,4 +1,4 @@
-# Weather Dashboard
+# Weather Dashboard :sun_behind_rain_cloud:
 
 This browser applicationis a weather dashboard that features dynamically updated HTML and CSS. It is retrieves data from another application's API. This goal is to see a weather outlook of multiple cities
 so user can plan a trip accordingly.
