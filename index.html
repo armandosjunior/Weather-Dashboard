@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="./assets/css/weather.css"/>
+    <title>Weather</title>
+</head>
+
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <div class="row-12 bg-dark text-center p-3">
+            <h1 class="display-3 text-white">Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <main class="d-flex justify-content-between">
+        <div class="col-12 col-md-3">
+
+            <div class="card mt-3">
+                <h3 class="card-header">Search for a city:</h3>
+                <form id="search-form" class="input-group mb-3 p-2">
+                    <input id="search-input" type="text" class="form-control" autofocus="true" placeholder="City Finder">
+                    <div class="input-group-append">
+                      <button id="city-submit" class="btn btn-outline-secondary" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card mt-3">
+                <ul class="list-group p-2">
+                    <button id="city-selected" data-name="atlanta" type="submit" class="btn bg-secondary btn-md btn-block">Atlanta</button>
+                    <button id="city-selected" data-name="denver" type="submit" class="btn bg-secondary btn-md btn-block">Denver</button>
+                    <button id="city-selected" data-name="seattle" type="submit" class="btn bg-secondary btn-md btn-block">Seattle</button>
+                    <button id="city-selected" data-name="sanfrancisco" type="submit" class="btn bg-secondary btn-md btn-block">San Francisco</button>
+                    <button id="city-selected" data-name="orlando" type="submit" class="btn bg-secondary btn-md btn-block">Orlando</button>
+                    <button id="city-selected" data-name="newyork" type="submit" class="btn bg-secondary btn-md btn-block">New York</button>
+                    <button id="city-selected" data-name="chicago" type="submit" class="btn bg-secondary btn-md btn-block">Chicago</button>
+                    <button id="city-selected" data-name="austin" type="submit" class="btn bg-secondary btn-md btn-block">Austin</button>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+
+            <div class="container-lg mt-3 bg-info">
+                <h3 class="subtitle"> <span id="city"></span></h3>
+                <div id="temp" class="list-group"></div>
+                <div id="wind" class="list-group"></div>
+                <div id="humidity" class="list-group"></div>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/weather.js"></script>
+</body>
+</html>
